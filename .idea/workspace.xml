@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc5d226-bfec-4a3e-87e2-3fb34067cee9" name="Default Changelist" comment="Django学习之学生管理系统">
+    <list default="true" id="cdc5d226-bfec-4a3e-87e2-3fb34067cee9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,8 +174,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+            <state relative-caret-position="37">
+              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -245,8 +245,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_school_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_school_manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -354,6 +354,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538119114092</updated>
     </task>
+    <task id="LOCAL-00001" summary="Django学习之学生管理系统">
+      <created>1542703419264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542703419264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -369,7 +377,7 @@
     <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992722" visible="true" weight="0.17909536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992722" visible="true" weight="0.17909536" />
       <window_info id="Structure" order="1" sideWeight="0.5007278" side_tool="true" weight="0.17726162" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,7 +391,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.65770173" visible="true" weight="0.24339207" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.65770173" visible="true" weight="0.24339207" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.3422983" side_tool="true" weight="0.24339207" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -398,6 +406,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Django学习之学生管理系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="Django学习之学生管理系统" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/js/jquery.cookie.js">
@@ -586,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        <state relative-caret-position="37">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
         </state>
       </provider>
     </entry>
