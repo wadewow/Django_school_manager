@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台</title>
+    <link rel="stylesheet" href="/static/css/layout.css" type="text/css">
+    <script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+    {% block css %}
+
+    {% endblock %}
+</head>
+<body>
+<div class="navigation">
+    <div class="container clear">
+        <h1 class="user">hello {{ username }}</h1>
+    </div>
+</div>
+<div class="manager-list">
+    <table>
+        <tr>
+            <td class="class-td"><a href="/class/" class="manager-item">班级</a></td>
+        </tr>
+        <tr>
+            <td class="student-td"><a href="/student/" class="manager-item">学生</a></td>
+        </tr>
+        <tr>
+            <td class="teacher-td"><a href="/teacher/" class="manager-item">教师</a></td>
+        </tr>
+    </table>
+</div>
+<div class="manager-content">
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+{% block  javascript%}
+
+{% endblock %}
+</html>

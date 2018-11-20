@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <p class="welcome">班级管理</p>
+    <input type="button" value="添加" id="add_class">
+{#    <a href="" id="add_class">添加</a>#}
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>标题</th>
+        <th>操作</th>
+    </tr>
+    {% for item in class_list %}
+          <tr>
+              <td>{{ item.id }}</td>
+              <td>{{ item.caption }}</td>
+              <td><a href="#">编辑</a> | <a href="#" class="td-remove">删除</a></td>
+          </tr>
+    {% endfor %}
+    </table>
+{#  “添加”功能遮罩层  #}
+    <div class="modal hide">
+        <input type="text" placeholder="标题">
+        <input type="button" value="取消" id="btn-cancel">
+        <input type="button" value="确定">
+    </div>
+{#  “删除”功能的遮罩层  #}
+    <div class="fuck hide">
+        <input type="button" value="取消" id="btn-remove">
+        <input type="button" value="确定">
+    </div>
+{#  蒙版  #}
+    <div class="shade hide"></div>
+{% endblock %}
+
+{% block javascript %}
+    <script>
+    $(function () {
+        $('.class-td').addClass('active');
+    });
+
+    $('#add_class').click(function () {
+        $('.modal,.shade').removeClass('hide');
+    });
+
+    $('.td-remove').click(function () {
+        $('.shade,.fuck').removeClass('hide')
+    });
+
+    $('#btn-cancel,#btn-remove').click(function () {
+        $('.modal,.shade,.fuck').addClass('hide')
+    });
+
+
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+body,h1,a{
+    margin: 0;
+    text-decoration: none;
+}
+.navigation{
+    background: blanchedalmond;
+}
+.container{
+    background: grey;
+    width: 700px;
+    margin: 0 auto;
+}
+.user{
+    float: right;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.manager-list{
+    position: absolute;
+    left: 0;
+    border: firebrick 1px solid;
+    width: 314px;
+    height: 1000px;
+}
+.manager-list table{
+    text-align: center;
+    width: 100%;
+}
+.manager-list table td{
+    height: 30px;
+}
+.manager-list table td:hover{
+    background: orange;
+}
+.manager-list table td:hover .manager-item{
+    color: white;
+}
+.active{
+    background: orange;
+    color: white;
+}
+.manager-content{
+    position: absolute;
+    right: 0;
+    border: black 1px solid;
+    width: 1345px;
+    height: 1000px;
+}
+.welcome{
+    color: orangered;
+    font-size: large;
+}
+.hide{
+    display: none;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    margin-top: -250px;
+    margin-left: -250px;
+    z-index: 2;
+    background: orangered;
+}
+.fuck{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -200px;
+    z-index: 3;
+    background: red;
+}
+.shade{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
