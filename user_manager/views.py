@@ -63,7 +63,6 @@ class Class(views.View):
         username = request.session.get('username')
         # 获取所有的班级列表
         class_list = models.Classes.objects.all()
-
         return render(request, 'class.html', locals())
 
 

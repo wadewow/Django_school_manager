@@ -33,6 +33,20 @@
 
     {% endblock %}
 </div>
+{#  “添加”功能遮罩层  #}
+<div class="modal hide">
+        <input type="text" placeholder="标题">
+        <input type="button" value="取消" id="btn-cancel">
+        <input type="button" value="确定">
+</div>
+{#  “删除”功能的遮罩层  #}
+<div class="fuck hide">
+        <input type="button" value="取消" id="btn-remove">
+        <input type="button" value="确定">
+</div>
+{#  蒙版  #}
+<div class="shade hide"></div>
+
 </body>
 {% block  javascript%}
 
