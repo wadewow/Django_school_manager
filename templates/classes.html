@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>添加班级</h1>
+    <form action="/classes/" method="post">
+        <input type="text" name="caption">
+        <input type="submit" value="提交">
+        {{ message }}
+    </form>
+{% endblock %}

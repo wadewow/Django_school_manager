@@ -3,6 +3,7 @@
 {% block content %}
     <p class="welcome">班级管理</p>
     <input type="button" value="添加" id="add_class">
+    <a href="/classes">添加</a>
     <table>
     <tr>
         <th>ID</th>
@@ -21,22 +22,5 @@
 {% endblock %}
 
 {% block javascript %}
-    <script>
-    $(function () {
-        $('.class-td').addClass('active');
-    });
-
-    $('#add_class').click(function () {
-        $('.modal,.shade').removeClass('hide');
-    });
-
-    $('.td-remove').click(function () {
-        $('.shade,.fuck').removeClass('hide')
-    });
-
-    $('#btn-cancel,#btn-remove').click(function () {
-        $('.modal,.shade,.fuck').addClass('hide')
-    });
-    </script>
-{#xin#}
+    <script src="/static/js/manager.js"></script>
 {% endblock %}

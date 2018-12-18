@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,HttpResponse
 from user_manager import models
 from django import views
 from django.utils.decorators import method_decorator
+import json
 # Create your views here.
 
 
@@ -64,6 +65,42 @@ class Class(views.View):
         # 获取所有的班级列表
         class_list = models.Classes.objects.all()
         return render(request, 'class.html', locals())
+
+    @method_decorator(auth)
+    def post(self, request):
+
+        response_dict = {
+            'status': True,
+            'error': None,
+            'data': None
+        }
+        caption = request.POST.get('caption')
+        if caption:                          # 标题不能为空
+            models.Classes.objects.create(caption = caption)
+        else:
+            response_dict['status'] = False
+            response_dict['error'] = '标题不能为空'
+        response_dict = json.dumps(response_dict)
+        return HttpResponse(response_dict)
+
+
+class AddClass(views.View):
+
+    @method_decorator(auth)
+    def get(self, request):
+        username = request.session.get('username')
+        return render(request, 'classes.html', locals())
+
+    @method_decorator(auth)
+    def post(self, request):
+        message = ""
+        caption = request.POST.get('caption')
+        if caption:
+            models.Classes.objects.create(caption = caption)
+            return redirect('/class/')
+        else:
+            message = '标题不能为空'
+            return render(request, 'classes.html', locals())
 
 
 class Student(views.View):

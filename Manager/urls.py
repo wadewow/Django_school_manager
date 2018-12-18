@@ -24,4 +24,5 @@ urlpatterns = [
     re_path('class/', views.Class.as_view()),
     re_path('student/', views.Student.as_view()),
     re_path('teacher/', views.Teacher.as_view()),
+    re_path('classes/', views.AddClass.as_view())
 ]
